@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    //es6类的写法;跟java类似
+    class Person{
+        constructor(name,pass)
+        {
+            this.name=name;
+            this.pass=pass;
+        }
+        showname(){
+            console.log(this.name);
+        }
+        //静态方法，只有类名才可调用
+        static getname(){
+            return "i am good";
+        }
+    }
+    console.log(Person.getname());
+//    var person=new Person("xiaoixoa",123);
+//    person.showname();
+    //es6的继承
+//    class Hr extends Person{
+//        constructor(name,pass,sex)
+//        {
+//            super(name,pass)
+//            this.sex=sex;
+//            console.log(this.sex);
+//
+//        }
+//    }
+//    var hr=new Hr("xiaobo",12345,"男");
+//    hr.showname();
+
+</script>
+</html>

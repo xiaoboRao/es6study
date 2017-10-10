@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>let用法</title>
+</head>
+<body>
+
+</body>
+<script>
+    //var是函数作用域，只要在函数内就能被调用；
+//    for(var i=0;i<10;i++)
+//   {
+//        console.log(i);
+//  }
+//   console.log(i);
+    //let是块级作用域，在代码块内有效,
+//    for(let j=0;j<10;j++)
+//    {
+//        console.log(j);
+//    }
+//    console.log(j);
+    if(true)
+    {
+//        var i=5;
+        let i=5;
+    }
+    //let时，i是出不去作用在外面的；
+    console.log(i);
+</script>
+</html>

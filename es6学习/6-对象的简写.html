@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+
+var a=123;
+//es6中，如果属性与值相同，则可以简写；
+var obj={
+    a,
+//    test:function () {
+//        console.log(123);
+//    }
+    //函数的简写
+    test(){
+        console.log(123);
+    }
+}
+var obj2={
+    b:234,
+}
+console.log(obj);
+obj.test();
+//es6对象扩展的属性
+
+//1.获取键值对
+console.log(Object.keys(obj));
+//2.对象合并
+    console.log(Object.assign(obj2,obj));
+</script>
+</html>
